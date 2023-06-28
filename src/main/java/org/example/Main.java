@@ -86,7 +86,7 @@ public class Main {
         try {
             visitorsService.enterZoo(4);
         } catch (VisitorNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
 
         //pokusim se vstoupit do zoo navstevnikem s NEDOSTATKEM kreditu:
@@ -94,7 +94,7 @@ public class Main {
         try {
             visitorsService.enterZoo(2);
         } catch (VisitorNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
 
 
